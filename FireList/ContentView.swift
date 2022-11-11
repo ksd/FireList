@@ -10,7 +10,6 @@ import SwiftUI
 struct ContentView: View {
     
     @ObservedObject var viewModel = ShoppingItemViewModel()
-    //@State var shoppingList = [ShoppingItem]()
     @State private var showAddSheet = false
     
     var body: some View {
@@ -34,9 +33,6 @@ struct ContentView: View {
                 ShoppingItemForm(viewModel: viewModel)
             }
         }
-        //.onReceive(viewModel.$shoppingItems, perform: { items in
-        //    shoppingList = items
-        //})
     }
 }
 
